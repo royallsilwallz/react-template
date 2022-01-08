@@ -5,7 +5,7 @@ function Home() {
   return (
     <div>
       <div>
-        <h2>Home</h2>
+        <h1 className="text-3xl font-bold underline">Hello Tailwind!</h1>
       </div>
 
       <Counter />
