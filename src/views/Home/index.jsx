@@ -1,24 +1,18 @@
-import { Outlet, Link } from 'react-router-dom';
 import Counter from '../../components/Counter';
+import User from '../../components/User';
 
-export default function Home() {
+function Home() {
   return (
     <div>
       <div>
-        <h1>Bookkeeper</h1>
-        <nav
-          style={{
-            borderBottom: 'solid 1px',
-            paddingBottom: '1rem',
-          }}
-        >
-          <Link to="/invoices">Invoices</Link> |{' '}
-          <Link to="/expenses">Expenses</Link>
-        </nav>
-        <Outlet />
+        <h2>Home</h2>
       </div>
 
       <Counter />
+
+      <User />
     </div>
   );
 }
+
+export default Home;
