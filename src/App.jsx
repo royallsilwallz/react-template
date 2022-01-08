@@ -1,10 +1,17 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './views/Home';
+import Expenses from './views/Expenses';
+import Invoices from './views/Invoices';
 import './App.css';
 
 export default function App() {
   return (
-    <div className="app">
-      <h1>Hello React!</h1>
-      <p>Hello people! This is react</p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="expenses" element={<Expenses />} />
+        <Route path="invoices" element={<Invoices />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
